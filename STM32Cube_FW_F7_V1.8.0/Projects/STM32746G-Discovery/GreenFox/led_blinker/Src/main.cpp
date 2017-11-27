@@ -1,13 +1,4 @@
- /**
-  ******************************************************************************
-  * @file    Templates/Src/main.c 
-  * @author  MCD Application Team
-  * @version V1.0.3
-  * @date    22-April-2016 
-  * @brief   STM32F7xx HAL API Template project 
-  ******************************************************************************
-  * @attention
-  *
+/**
   * <h2><center>&copy; COPYRIGHT(c) 2016 STMicroelectronics</center></h2>
   *
   * Redistribution and use in source and binary forms, with or without modification,
