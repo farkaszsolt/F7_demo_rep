@@ -40,6 +40,9 @@ Use the connected LEDs form the previous exercise (again, if it's more it's bett
 - Use the functions from above. Create a simple program where you use a button to change between one directional and two directional chase light. *This time the speed of the light is constant.*
 - Use the functions from above. Create a simple program where you use a button to increase the speed of the light. Find a solution to lower it! *This time we are using our button, so there is no option to change between one and two directional chase light.*
 
+#### 3. Binary counter
+[Createa a binry counter just like this](https://www.youtube.com/watch?v=UzZNyhspXmo) which can count up to 255.
+
 ## Individual Workshop Review
 Please follow the styleguide: [Our C++ styleguide](../../styleguide/cpp.md)
 
