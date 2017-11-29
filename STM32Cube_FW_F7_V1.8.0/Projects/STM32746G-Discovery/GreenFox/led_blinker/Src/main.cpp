@@ -69,6 +69,19 @@ int main(void)
   /* Enable the CPU Cache */
   CPU_CACHE_Enable();
 
+
+
+  __HAL_RCC_GPIOA_CLK_ENABLE();    // we need to enable the GPIOA port's clock first
+
+  GPIO_InitTypeDef cica;            // create a config structure
+  cica.Pin = GPIO_PIN_0;            // this is about PIN 0
+  cica.Mode = GPIO_MODE_OUTPUT_PP;  // Configure as output with push-up-down enabled
+  cica.Pull = GPIO_PULLDOWN;        // the push-up-down should work as pulldown
+  cica.Speed = GPIO_SPEED_HIGH;     // we need a high-speed output
+
+  HAL_GPIO_Init(GPIOA, &cica);      // initialize the pin on GPIOA port with HAL
+
+HAL_Delay(10);
   /* STM32F7xx HAL library initialization:
        - Configure the Flash ART accelerator on ITCM interface
        - Configure the Systick to generate an interrupt each 1 msec
@@ -84,12 +97,12 @@ int main(void)
   /* Add your application code here     */
   BSP_LED_Init(LED_GREEN);
   BSP_LED_On(LED_GREEN);
-
+//BSP_LED_Init(LED_GREEN);
   /* Infinite loop */
   while (1)
   {
 	  //TODO:
-	  //Flash the ledwith 200 ms period time
+	  //Flash the led with 200 ms period time
 
   }
 }
